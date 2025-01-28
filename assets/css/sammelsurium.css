@@ -1,0 +1,157 @@
+/* ===============================
+RESET
+=============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Box-sizing Regeln */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Verhindert Verzerrung/Verschwimmen der Schrift */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* Entfernt die Standard Abstände zugunsten einer besseren Kontrolle im selbst erstellten CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Entfernt Listenstile bei ul-, ol-Elementen mit einer Listenrolle, was darauf hindeutet, dass das Standardstyling entfernt wird */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Legt die Standardwerte für den body fest */
+body {
+	min-height: 100svh;
+	line-height: 1.5;
+}
+
+/* Legt kürzere Zeilenabstände für Überschriften und interaktive Elemente fest */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Gleicht Textumbrüche bei Überschriften aus */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* Gibt Link Elementen, die keine Klasse haben Standardstile */
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	
+}
+
+/* Erleichtert die Arbeit mit Bildern */
+img,
+picture,
+svg,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+
+/* ===============================
+fonts 
+=============================== */
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whie;
+    font-size: 4svw;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 4svw;
+    margin-top: -2svw;
+}
+
+a:hover {
+    color: lime;
+}
+
+/* ===============================
+grundlegednes 
+=============================== */
+
+body {
+    background-color: rgb(184, 201, 164);
+}
+
+.text_spalte{
+    display: flex;
+    justify-content: space-between;
+    padding: 1svw;
+
+}
+
+.bild_spalte{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+}
+
+.bild_01 {
+    grid-column: 1 / span 3;
+    margin-left: 20svw;
+}
+
+
+figure{
+    margin: 1svw;
+}
+img {
+    width: 60svw;
+}

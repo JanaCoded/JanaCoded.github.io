@@ -1,0 +1,114 @@
+/*----------------------------------------
+RESET
+----------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+/* -----RGB COLOUR CODES---------------------------------------------------------------------------
+
+dunkel lila: (68,0,102)
+helles lila: (200,120,255)
+knalliges lila: (163,0,219)
+rosa: (242,175,233)
+rot: (255,96,71)
+helles grün: (215,242,119)
+knalliges grün: (211,250,7)
+blau (80,215,217)
+
+für transparenz einen vierten wert in der klammer eingeben (alpha kanal); bsp.: (211,250,7,10) 
+--------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------
+TYPO
+----------------------------------------*/
+
+@font-face {
+    font-family: DT Getai;
+    src: url(../fonts/DTGetaiGroteskDisplay-Black.ttf);
+}
+
+@font-face {
+    font-family: Ortica;
+    src: url(../fonts/Ortica-Light.otf);
+}
+
+@font-face {
+    font-family: Ortica Bold;
+    src: url(../fonts/Ortica-Bold.otf);
+}
+
+a {
+    font-family: DT Getai, Arial, sans-serif;
+}
+
+/*----------------------------------------
+NAV-BUTTONS
+----------------------------------------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100vw;
+    height: 3vw;
+    background-color: rgb(255, 96, 71);
+}
+
+h1 {
+    font-family: DT Getai;
+    font-size: 1.5rem;
+    padding: 0.7vw 0 0 2vw;
+
+}
+
+a {
+    padding: 1vw 2vw 1vw 2vw;
+}
+
+nav div {
+    padding: 1vw 2vw 1vw 2vw;
+    margin-left: -7vw;
+}
+
+/*----------------------------------------
+MAIN
+----------------------------------------*/
+
+body {
+    background-color: rgb(223, 195, 243);
+}
+
+main {
+    margin: 7vw 15vw;
+}
+
+h2 {
+    font-family: DT Getai;
+    font-size: 2rem;
+    margin-bottom: 2vw;
+}
+
+p {
+    font-family: Ortica, Arial, sans-serif;
+    font-size: 1.2rem;
+    width: 70vw;
+}

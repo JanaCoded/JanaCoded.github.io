@@ -1,0 +1,353 @@
+/* ===============================
+RESET
+=============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Box-sizing Regeln */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Verhindert Verzerrung/Verschwimmen der Schrift */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* Entfernt die Standard Abstände zugunsten einer besseren Kontrolle im selbst erstellten CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Entfernt Listenstile bei ul-, ol-Elementen mit einer Listenrolle, was darauf hindeutet, dass das Standardstyling entfernt wird */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Legt die Standardwerte für den body fest */
+body {
+	min-height: 100svh;
+	line-height: 1.5;
+}
+
+/* Legt kürzere Zeilenabstände für Überschriften und interaktive Elemente fest */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Gleicht Textumbrüche bei Überschriften aus */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* Gibt Link Elementen, die keine Klasse haben Standardstile */
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	
+}
+
+/* Erleichtert die Arbeit mit Bildern */
+img,
+picture,
+svg,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+/* --------------------------------------------------
+FONTS
+---------------------------------------------------- */
+@font-face {
+    font-family: computer;
+    src: url(/assets/fonts/LazenbyCompLiquid.ttf);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    line-height: 1.2vw;
+    color: black;
+}
+
+
+h1 {
+    font-family: computer,Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: black;
+
+}
+
+h2 {
+    font-family: computer,Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: black;
+}
+
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    
+    color: black;
+    text-decoration: none;
+
+    border-left: 3px solid rgb(237, 237, 237);
+    border-top: 3px solid rgb(252, 249, 249);
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+    background-color: rgb(167, 167, 167);
+   
+    padding: .5rem;
+    
+    
+}
+
+a:hover {
+    color: lime;
+}
+
+/* --------------------------------------------------
+Grundlegendes
+---------------------------------------------------- */
+
+
+header{
+    width: 100vw;
+    
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+   
+    background-image: url(/assets/img/mäuse/tapete2.png);
+    
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(5, 10svw);
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------
+projektbeschreibung
+---------------------------------------------------- */
+
+
+.text_spalte{
+    margin-right: 3svw;
+    padding: 1svw;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+
+    
+    
+
+}
+
+.projektbeschreibung{
+
+
+    border-left: 3px solid rgb(237, 237, 237);
+    border-top: 3px solid rgb(252, 249, 249);
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+    background-color: rgb(167, 167, 167);
+   
+    padding: .5rem;
+    margin-top: 1svw;
+}
+
+
+
+
+
+/* --------------------------------------------------
+bilder
+---------------------------------------------------- */
+
+
+
+
+
+
+video {
+    width: 100svw;
+}
+
+
+
+
+
+.mac{
+
+    position: fixed;
+    top: 3svw;
+    right: 10svw;
+    background-color: rgb(177, 177, 177);
+    height: 52svw;
+    width: 40svw;
+
+
+    display: flex;
+    align-content: start;
+    justify-content: center;
+    align-items: start;
+
+    border-left: 1svw solid gray;
+    border-right: 1svw solid gray;
+    
+    border-top: 3svw solid rgb(252, 249, 249);
+    border-bottom: 5svw solid rgb(20, 20, 20);
+    
+
+    border-radius: 10px;
+
+    
+
+}
+.mac_screen{
+
+    background-color: rgb(255, 255, 255);
+    height: 21svw;
+    width: 60svw;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3svw;
+    
+
+    border-left: 1svw solid gray;
+    border-right: 1svw solid gray;
+    
+    border-top: 1svw solid rgb(67, 67, 67);
+    border-bottom: 1svw solid rgb(228, 226, 226);
+    border-radius: 20px;
+
+    
+
+    
+
+    background-color: black;
+
+}
+
+.screen_innen{
+   
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+
+   
+    
+    
+
+}
+.mac_logo{
+    
+    background-image: url(/assets/img/mäuse/applelogo84.png);
+    background-size: 2.3svw;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 6.5svh;
+    width: 3.5svw;
+
+    position: absolute;
+    top: 37svw;
+    left: 5svw;
+
+    border-left: .3svw solid gray;
+    border-right: .3svw solid gray;
+    
+    border-top: .3svw solid rgb(67, 67, 67);
+    border-bottom: .3svw solid rgb(228, 226, 226);
+    background-color: white;
+    
+}
+
+.mac_disc{
+    position: absolute;
+    top: 37svw;
+    left: 18svw;
+
+    height: 2svh;
+    width: 17svw;
+
+    border-left: .3svw solid gray;
+    border-right: .3svw solid gray;
+    
+    border-top: .3svw solid rgb(67, 67, 67);
+    border-bottom: .3svw solid rgb(228, 226, 226);
+    background-color: rgb(0, 0, 0);
+    
+}
+
+

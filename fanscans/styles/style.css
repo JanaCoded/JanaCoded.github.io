@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    color: var(--text-color);
+    /* background-color: var(--background-color); */
+    
+    --text-color: blue;
+    --background-color:rgb(0, 0, 0);
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+
+
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7svw;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: lime;
+}
+nav{
+  /* background-color: lime; */
+  height: 4svw;
+}
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+    header p {
+      mix-blend-mode: difference;
+      color: blue;
+    }
+
+    /* Endless Scroll */
+
+    /* html, body {
+      height: 100svh;
+      overflow: hidden;
+    }
+
+  main.js-loop {
+    position: relative;
+    height: 100svh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  } */
+  
+  .wrapper {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee {
+    overflow: hidden;
+    box-sizing: border-box;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    font-family: 'Contrail One', cursive;
+    font-size: 4rem;
+  }
+  
+  .marquee--inner {
+    display: block;
+    top: 0;
+    width: 200%;
+    position: absolute;
+    animation: marquee 10s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+      color: red;
+    }
+  }
+  
+  span {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  
+.centered {
+  display: flex;
+  justify-content: center;
+
+}
+
+  .l_box {
+    text-align:center;
+    margin: 0px 0px;
+    height: auto;
+    overflow: hidden;
+    background-attachment: fixed;
+
+  }
+  
+  .l_eins {
+    background-image: url('../assets/img/schnuere.png');
+    background-repeat: repeat;
+    background-size: 190px;
+
+    overflow: none;
+    color: white;
+
+  }
+  
+
+  .l_zwei {
+    background: #F9D1E4;
+    background-repeat: repeat;
+    height: 200px;
+    overflow-y: none;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .l_drei {
+    background-image: url('../assets/img/sonne_2.png');
+    background-color: black;
+    background-repeat: repeat;
+    background-size: cover;
+    overflow: none;
+    height: 70px;
+  }
+
+  .l_drei_2 {
+    background-image: url('../assets/img/sonne_3.png');
+    background-color: black;
+    background-repeat: repeat;
+    background-size: cover;
+    overflow: none;
+    height: 70px;
+  }
+
+  .l_vier {
+    background-image: url('../assets/img/scan_streifen.gif');
+    background-repeat: repeat;
+    overflow: none;
+  }
+
+  .l_fünf {
+    /*background-image: url('../assets/img/scan_a_scan.png');*/
+    background-repeat: repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    height: 200px;
+    text-align: center;
+  }
+  
+  .theduck {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: red;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center top;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .theduck img {
+    width: 200px;
+  }
+
+  .duck_parts1 {
+    background-image: url(../assets/img/ducky_part_1.jpeg);
+  }
+
+  .duck_parts2 {
+    background-image: url(../assets/img/ducky_part_2.jpeg);
+    
+    
+  }
+
+/*SCAN ANIMATION*/
+
+.scan {
+  background: white;
+  /*mix-blend-mode:difference;*/
+
+  height: 100%;
+  width: 15px;
+  position:fixed;
+  top: 0;
+  right: -5;
+
+  -webkit-box-shadow: 0px 0px 16px 8px #FFFFFF; 
+  box-shadow: 0px 0px 16px 8px #FFFFFF;
+
+  animation: myAnim 10s linear 1s infinite alternate-reverse;
+}
+
+.scan:hover {
+  animation-play-state: running;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(105vw);
+  }
+}
+
+
+  /*FONTS*/
+
+  @font-face {
+    font-family: aktivGrotesk;
+    src: url(/assets/font/aktiv_grotesk/AktivGrotesk-Regular.woff);
+  }
+
+  @font-face {
+    font-family: aktivGroteskBlack;
+    src: url(/assets/font/aktiv_grotesk_black/aktivgrotesk-black-webfont.woff);
+  }
+
+  h2 {
+    text-align: center;
+    font-family: aktivGroteskBlack;
+    font-weight: bolder;
+  
+    font-size: 2rem;
+    
+    margin: 10px;
+  }
+  
+  p {
+    text-align: left;
+    font-family: 'Contrail One', cursive;
+  
+    font-size: 3rem;
+
+    margin: 10px;
+    /*column-count: 2;
+    column-gap: 40px;*/
+  }
+
+
+
+  /*SALYA*/
+
+.s_section {
+  background: url(../assets/img/s_can.jpg);
+  background-attachment: fixed;
+}
+
+  .box {
+    flex: 1;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 68px;
+
+    text-align: right;
+    font-family: aktivGrotesk;
+    font-size: 80px;
+    letter-spacing: 25px;
+    color: blue;
+  }
+  .scanfan {
+    
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+  }
+  .duve {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .s_can {
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+
+
+
+    width: 100%;
+    height: auto;
+  }
+  .picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .scrolling-object {
+    position: absolute;
+    overflow: auto;
+
+    animation-name: scrollRightToLeft;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(-110px) scale(-1);
+    }
+  @keyframes scrollRightToLeft {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: calc(100% - 100px);
+      
+    }
+  }
+  
+  .blitz {
+    background-color: #ffea00;
+  }
+  .scanner {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .schallplatte-1 {
+    display: flex;
+    transform: rotate(180deg);
+  }
+   .schallplatte-1 img {
+    width: 300px;
+
+   }
+  
+
+  /* JANA */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+  
+    overflow-x: hidden;
+  }
+
+
+
+  .j_box {
+    text-align:center;
+    margin: 0px 0px;
+    height: auto;
+    overflow: hidden;
+    background-attachment: fixed;
+    max-height: 1000px;
+    background-color: #0600ff;
+
+
+  }
+  
+  .willkommen{
+    background-color: #ffc658;
+  }
+  
+  .einleitung{
+    height: 100%;
+    background-image: url("../assets/img/Strurktur_1.png");
+    height: 500px;
+    
+  
+  }
+    
+  .scanfans {
+    height: 200px;
+    background-image: url("../assets/img/Strurktur_2_transp.png");
+    padding: 4rem;
+    padding-bottom: 7rem;
+    background-color: #ffc658;
+  
+
+  }
+
+  .aufgepasst{
+    height: 500px;
+    background-image: url("../assets/img/aufgepasst.png");
+    background-size: 80%;
+    height: 8rem;
+    padding-bottom: 1rem;
+    
+  }
+
+
+  .taube{
+    padding: 1rem;
+    height: 570px;
+    background-color:#0600ff;
+  
+  }
+
+  .alufolie {
+    background-image: url("../assets/img/AluFolie.jpg");
+    height: 300px;
+  }
+
+  .alufolie2 {
+    background-image: url("../assets/img/AluFolie.jpg");
+    height: 300px;
+  }
+
+  
+
+  .weirdling{
+background-color: black;
+  }
+
+
+.taube2{
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+
+
+.j_scanner{
+  height: 500px;
+  background-image: url("../assets/img/Scanner2.png");
+  background-size: 90%;
+}
+
+/*.Weirdling2 {
+  height: 332px;
+  width: 200px;
+}
+
+.weirdling_parts1 {
+  background-image: url("../assets/img/Weirdling2_1.png");
+}
+
+.weirdling_parts2 {
+  background-image: url("../assets/img/Weirdling2_2.png");
+
+}
+*/
+
+.scanbewegung{
+  background-color:#fff6de;
+  height: auto;
+
+}
+
+.scangirls{
+  background-image: url("../assets/img/ScanGirls.gif");
+  background-size: 700px;
+  height:500px;
+}
+
+.scangirls p {
+  text-align: center;
+  font-size: 10rem;
+  color: white;
+  padding-top: 125px;
+}
+
+.scan2{
+  height: 50px;
+}
+
+.hoeher{
+  height: 300px;
+}
+
+
+
+
+  /*FONTS*/
+
+
+
+  h2 {
+    text-align: center;
+    font-family: aktivGroteskBlack;
+    font-weight: bolder;
+  
+    font-size: 2rem;
+    
+    margin: 10px;
+  }
+  
+  p {
+    text-align: left;
+    font-family: modula-sans, sans-serif; ;
+    color: #0600ff;
+    font-size: 6rem;
+    
+    margin: 2rem;
+   
+ p span {
+  background-color: white;
+ }
+  
+  }

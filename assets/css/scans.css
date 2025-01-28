@@ -1,0 +1,256 @@
+/* ===============================
+RESET
+=============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Box-sizing Regeln */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Verhindert Verzerrung/Verschwimmen der Schrift */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* Entfernt die Standard Abstände zugunsten einer besseren Kontrolle im selbst erstellten CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Entfernt Listenstile bei ul-, ol-Elementen mit einer Listenrolle, was darauf hindeutet, dass das Standardstyling entfernt wird */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Legt die Standardwerte für den body fest */
+body {
+	min-height: 100svh;
+	line-height: 1.5;
+}
+
+/* Legt kürzere Zeilenabstände für Überschriften und interaktive Elemente fest */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Gleicht Textumbrüche bei Überschriften aus */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* Gibt Link Elementen, die keine Klasse haben Standardstile */
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	
+}
+
+/* Erleichtert die Arbeit mit Bildern */
+img,
+picture,
+svg,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+/* --------------------------------------------------
+FONTS
+---------------------------------------------------- */
+
+@font-face {
+    font-family: computer;
+    src: url(/assets/fonts/LazenbyCompLiquid.ttf);
+}
+@font-face {
+    font-family: stellar;
+    src: url(/assets/fonts/Stellar_2023_101VF.ttf);
+}
+
+@font-face {
+    font-family: spliflap;
+    src: url(/assets/fonts/SplitFlapV2VF.ttf);
+}
+
+@font-face {
+    font-family: dtgetai;
+    src: url(/assets/fonts/DTGetaiGroteskDisplay-Black.ttf);
+}
+
+
+p{
+    font-family: modula-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+    color: white;
+}
+
+
+h1 {
+    font-family: modula-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    color: white;
+
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: white;
+}
+
+
+a {
+    font-family: modula-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    color: white;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: lime;
+}
+
+/* --------------------------------------------------
+Grundlegendes
+---------------------------------------------------- */
+
+header{
+    width: 100vw;
+    
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    /* background-image: url(/assets/img/bannermuster.jpg);
+     */
+    background-color: #7e4b96 ;
+    height: 100svh;
+    overflow: hidden;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 40%  60% ;
+    grid-template-rows: repeat(20, 5svw);
+}
+
+figure{
+    grid-column: 2;
+    grid-row: 1;
+
+    
+}
+
+
+
+
+
+/* --------------------------------------------------
+projektbeschreibung
+---------------------------------------------------- */
+
+
+.text_spalte{
+    margin-right: 3svw;
+    padding: 1svw;
+    
+
+}
+
+.projektbeschreibung{
+    grid-column: 1;
+}
+
+.about_JK a {
+    font-size: 2svw;
+
+}
+
+/* --------------------------------------------------
+bilder
+---------------------------------------------------- */
+
+.bild_spalte{
+    height: 100svh;
+    overflow: scroll;
+    
+
+/* 
+    background-color: rgba(128, 255, 0, 0.311); */
+
+   
+}
+
+
+img {
+    width: 60svw;
+}
+
+video {
+    width: 60svw;
+}
+
+
+
+

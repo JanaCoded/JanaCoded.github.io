@@ -1,0 +1,125 @@
+/* ===============================
+RESET
+=============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* --------------------------------------------------
+FONTS
+---------------------------------------------------- */
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    color: blue;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: blue;
+    /* border: solid lime 4px; */
+    margin-right: 3%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: blue;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5svw;
+    color: blue;
+}
+a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5svw;
+    color: blue;
+    text-shadow: 3px 1px 10px rgba(0, 255, 0, 1);
+}
+
+/* --------------------------------------------------
+INDEX
+---------------------------------------------------- */
+
+body{
+    overflow: hidden;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    margin: 5%;
+    text-align: center;
+    width: 90svw;
+    flex-wrap: wrap;
+    
+}
+
+header{
+    width: 100svw;
+    display: flex;
+    justify-content: end;
+}
+
+header a {
+    font-size: 3svw;
+}
+header a:hover {
+    font-size: 3svw;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    flex-wrap: wrap;
+    margin-top: 10svh;
+
+
+}
+
+.hello{
+    display: flex;
+   /* background-color: magenta; */
+   flex-wrap: wrap;
+   justify-content: center;
+    align-content: center;
+
+
+}
+
+article{
+    border: solid blue .3rem;
+    margin: .5rem;
+    padding: .1rem;
+    
+    
+    text-align: center;
+    
+}
+
+

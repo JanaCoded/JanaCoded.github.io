@@ -1,0 +1,159 @@
+/* ===============================
+RESET
+=============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Box-sizing Regeln */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Verhindert Verzerrung/Verschwimmen der Schrift */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* Entfernt die Standard Abstände zugunsten einer besseren Kontrolle im selbst erstellten CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Entfernt Listenstile bei ul-, ol-Elementen mit einer Listenrolle, was darauf hindeutet, dass das Standardstyling entfernt wird */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Legt die Standardwerte für den body fest */
+body {
+	min-height: 100svh;
+	line-height: 1.5;
+}
+
+/* Legt kürzere Zeilenabstände für Überschriften und interaktive Elemente fest */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Gleicht Textumbrüche bei Überschriften aus */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* Gibt Link Elementen, die keine Klasse haben Standardstile */
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	
+}
+
+/* Erleichtert die Arbeit mit Bildern */
+img,
+picture,
+svg,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    color: blue;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: blue;
+    /* border: solid lime 4px; */
+    margin-right: 3%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: blue;
+
+    line-height: 3rem;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: blue;
+}
+a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: blue;
+    text-shadow: 3px 1px 10px rgba(0, 255, 0, 1);
+}
+
+span {
+    color: lime;
+}
+
+
+
+
+
+section{
+    margin: 1svw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text{
+    width: 45svw;
+}
+
+img{
+     width: 30svw;
+}
